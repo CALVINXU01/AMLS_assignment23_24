@@ -10,7 +10,7 @@ In Task B, the code include implementation of ResNet50 architectures on PathMNIS
 
 ## Prerequisites for The project
 
-- Python 3.x
+- Python 3.11
 - PyTorch
 - torchvision
 - Pillow
@@ -37,7 +37,6 @@ For example, download the train dataset of PneumoniaMNIST.
 
 * *from medmnist import PathMNIST, PneumoniaMNIST*
 * *train_datasetA = PneumoniaMNIST(split="train",download=True)*
-
 * *train_datasetA.save(folder=".../Datasets/pneumoniamnist/train")*
 
 The format of the dataset would be split into 3 folder which are **train, validate** and **test** respectively. Inside the folder, there are a folder called pneumoniamnist (in this example) which includes all the images in the train dataset and a csv file which includes the name of images and the corresponding label. The main file would extract the label and image from the folder according to the csv file. In order to make this clear, there are the rest code for downloading the pneumoniamnist dataset based on the Dataset format.
@@ -55,7 +54,6 @@ The PathMNIST can be download in the same precedure.
 * *test_datasetA.save(folder=".../Datasets/pathmnistmnist/test")*
 * *val_datasetA = PathMNIST(split="val",download=True)*
 * *val_datasetA.save(folder=".../Datasets/pathmnist/validate")*
-
 
 ## Role of the file
 
